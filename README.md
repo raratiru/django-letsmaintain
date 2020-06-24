@@ -24,8 +24,24 @@ FIVE_MINUTES_LATER=$(date --date "$(date +%Y-%m-%dT%H:%M:%S%:z) +5 min" --iso-86
 echo "from django.core.cache import cache; cache.set(\"maintenance_alert\", \"$FIVE_MINUTES_LATER\")" \
   | ./manage.py shell
 sleep 5m
-# Redirect to maintenance.html 
+# Redirect to maintenance.html
 # nginx example: https://lincolnloop.com/blog/pro-tip-redirecting-custom-nginx-maintenance-page/
 # <perform maintenance>
 # Cancel redirect
 ```
+
+## Required Settings
+The required settings for the middleware to operate are:
+
+* CACHES
+* TIME_ZONE
+* USE_TZ = True
+* "letsmaintain" in INSTALLED_APPS
+* "letsmaintain.middleware.MaintenanceMiddleware" in MIDDLEWARE after "MessageMiddleware"
+
+## Tests
+
+To run the tests:
+
+* Install tox
+* Define: `TOX_DB_NAME`, `TOX_DB_USER`, `TOX_DB_PASSWD`

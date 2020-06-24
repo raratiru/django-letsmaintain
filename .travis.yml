@@ -1,0 +1,22 @@
+dist: xenial
+language: python
+python:
+  - '3.5'
+  - '3.6'
+  - '3.7'
+  - '3.8'
+install:
+  - pip install tox-travis
+  - pip install coveralls
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.8 ]]; then pip install black flake8 bandit; fi
+script:
+  - tox
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.8 ]]; then black . --check; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.8 ]]; then flake8 .; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.8 ]]; then bandit letsmaintain/*; fi
+services:
+  - postgresql
+env:
+  - POSTGRES_USER=postgres POSTGRES_PASSWD= TOX_DB_NAME=letsmaintain
+after_success:
+  - coveralls
