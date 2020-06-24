@@ -45,11 +45,11 @@ sleep 5m
 ## Required Settings
 The required settings for the middleware to operate are:
 
-* CACHES
-* TIME_ZONE
-* USE_TZ = True
-* "letsmaintain" in INSTALLED_APPS
-* "letsmaintain.middleware.MaintenanceMiddleware" in MIDDLEWARE after "MessageMiddleware"
+* `CACHES`
+* `TIME_ZONE`
+* `USE_TZ = True`
+* "letsmaintain" in `INSTALLED_APPS`
+* "letsmaintain.middleware.MaintenanceMiddleware" in `MIDDLEWARE` after "MessageMiddleware"
 
 ## Tests
 
