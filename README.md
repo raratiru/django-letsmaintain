@@ -10,7 +10,8 @@
 [![Django Versions](https://img.shields.io/badge/Django-2.2%20|%203.0-brown.svg)](https://www.djangoproject.com/download/)
 
 # django-letsmaintain
-Django middleware for maintenance countdown warning message
+Django middleware that provides a maintenance countdown warning message.
+
 
 This middleware searches the cache for the key `maintenance_alert`. Its contents are expected to be a string representing an aware datetime in isoformat:
 
