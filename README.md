@@ -21,7 +21,8 @@ A bash script can invoke the relevant cache key:
 #!/bin/bash
 
 FIVE_MINUTES_LATER=$(date --date "$(date +%Y-%m-%dT%H:%M:%S%:z) +5 min" --iso-8601=minutes)
-echo "from django.core.cache import cache; cache.set(\"maintenance_alert\", \"$FIVE_MINUTES_LATER\")" | ./manage.py shell
+echo "from django.core.cache import cache; cache.set(\"maintenance_alert\", \"$FIVE_MINUTES_LATER\")" \
+  | ./manage.py shell
 sleep 5m
 # Redirect to maintenance.html 
 # nginx example: https://lincolnloop.com/blog/pro-tip-redirecting-custom-nginx-maintenance-page/
