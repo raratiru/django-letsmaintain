@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.com/raratiru/django-letsmaintain.svg?branch=master)](https://travis-ci.com/raratiru/django-letsmaintain)
 [![Coverage Status](https://coveralls.io/repos/github/raratiru/django-letsmaintain/badge.svg?branch=master)](https://coveralls.io/github/raratiru/django-letsmaintain?branch=master)
 [![Updates](https://pyup.io/repos/github/raratiru/django-letsmaintain/shield.svg)](https://pyup.io/repos/github/raratiru/django-letsmaintain/)
-[![Known Vulnerabilities](https://snyk.io/test/github/raratiru/django-letsmaintain/badge.svg?targetFile=test_setup%2Frequirements.txt)](https://snyk.io/test/github/raratiru/django-letsmaintain?targetFile=test_setup%2Frequirements.txt)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 [![Python Versions](https://img.shields.io/badge/Python-3.7%20|%203.8-%236600cc)](https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django)
