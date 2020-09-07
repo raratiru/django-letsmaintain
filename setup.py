@@ -22,7 +22,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="django-letsmaintain",
-    version="1.0",
+    version="1.0.1",
     python_requires=">=3.7",
     description=(
         "Django middleware that provides a maintenance countdown warning message."
@@ -41,7 +41,7 @@ setup(
         "Environment :: Web Environment",
         "Framework :: Django",
         "Framework :: Django :: 2.2",
-        "Framework :: Django :: 3.0",
+        "Framework :: Django :: 3.1",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
