@@ -68,6 +68,6 @@ jobs:
     
     - name: Test with pytest
       run: |
-        echo ${ls)
+        echo $(ls)
         echo $(pwd)
         pytest -rs --nomigrations --cov --cov-branch
