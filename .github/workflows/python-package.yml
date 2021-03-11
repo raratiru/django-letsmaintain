@@ -65,6 +65,9 @@ jobs:
         black . --check
         # Run bandit
         bandit letsmaintain/*
+    - name: set pythonpath
+      run: |
+        echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
     
     - name: Test with pytest
       run: |
