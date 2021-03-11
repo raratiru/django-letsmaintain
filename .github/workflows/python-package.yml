@@ -70,4 +70,5 @@ jobs:
       run: |
         echo $(ls)
         echo $(pwd)
+        echo $(env)
         pytest -rs --nomigrations --cov --cov-branch
