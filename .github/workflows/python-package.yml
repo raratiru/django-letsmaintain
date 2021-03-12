@@ -37,8 +37,8 @@ jobs:
     
     strategy:
       matrix:
-        python-version: ${{ env.python-versions }}
-        django-version: ["${{ env.django-lts }}", "${{ env.latest-django }}" ]
+        python-version: ${{ python-versions }}
+        django-version: ["${{ django-lts }}", "${{ latest-django }}" ]
 
     steps:
     - uses: actions/checkout@v2
