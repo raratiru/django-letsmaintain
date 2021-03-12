@@ -14,28 +14,27 @@ env:
     3.7
     3.8
     3.9
+  TOX_DB_NAME: letsmaintain
+  TOX_DB_USER: postgres
+  TOX_DB_PASSWD: ${{ secrets.PG_PASS }}
+  DJANGO_SETTINGS_MODULE: test_setup.settings
+  TOX_DB_ENGINE: django.db.backends.postgresql
+  POSTGRES_PASSWORD: ${{ secrets.PG_PASS }}
+  POSTGRES_USER: postgres
+  POSTGRES_DB:: letsmaintain
    
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    env:
-      TOX_DB_NAME: letsmaintain
-      TOX_DB_USER: postgres
-      TOX_DB_PASSWD: ${{ secrets.PG_PASS }}
-      DJANGO_SETTINGS_MODULE: test_setup.settings
-      TOX_DB_ENGINE: django.db.backends.postgresql
+    
     services:
       postgres:
         image: postgres:13
-        env:
-          POSTGRES_PASSWORD: ${{ secrets.PG_PASS }}
-          POSTGRES_USER: postgres
-          POSTGRES_DB:: letsmaintain
         ports:
           - 5432:5432
         # needed because the postgres container does not provide a healthcheck
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+    
     strategy:
       matrix:
         python-version: ${{ env.python-versions }}
