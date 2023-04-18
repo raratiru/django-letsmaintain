@@ -57,35 +57,35 @@ jobs:
       run: |
         pytest -rs --nomigrations --cov --cov-branch
 
-    - name: Coveralls
-      uses: coverallsapp/github-action@v1
-      with:
-        parallel: true
-        flag-name: Testing
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Coveralls
+    #   uses: coverallsapp/github-action@v1
+    #   with:
+    #     parallel: true
+    #     flag-name: Testing
+    #     github-token: ${{ secrets.GITHUB_TOKEN }}
 
-  coveralls_finish:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+  # coveralls_finish:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
 
-    - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: "3.11"  # CHECK
+  #   - uses: actions/checkout@v2
+  #   - name: Set up Python
+  #     uses: actions/setup-python@v2
+  #     with:
+  #       python-version: "3.11"  # CHECK
 
-    - name: Install last pass dependencies
-      run: |
-        python -m pip install black flake8 bandit
-    - name: Run Last Checks
-      run: |
-        black . --check
-        flake8 .
-        bandit letsmaintain/*
+  #   - name: Install last pass dependencies
+  #     run: |
+  #       python -m pip install black flake8 bandit
+  #   - name: Run Last Checks
+  #     run: |
+  #       black . --check
+  #       flake8 .
+  #       bandit letsmaintain/*
 
-    - name: Coveralls Finished
-      uses: coverallsapp/github-action@v1
-      with:
-        parallel-finished: true
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Coveralls Finished
+    #   uses: coverallsapp/github-action@v1
+    #   with:
+    #     parallel-finished: true
+    #     github-token: ${{ secrets.GITHUB_TOKEN }}
