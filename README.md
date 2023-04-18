@@ -5,8 +5,8 @@
 [![Updates](https://pyup.io/repos/github/raratiru/django-letsmaintain/shield.svg)](https://pyup.io/repos/github/raratiru/django-letsmaintain/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-[![Python Versions](https://img.shields.io/badge/Python-3.8%20|%203.9|%203.10-%236600cc)](https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django)
-[![Django Versions](https://img.shields.io/badge/Django-2.2%20|%203.2%20|%204.0-brown.svg)](https://www.djangoproject.com/download/)
+[![Python Versions](https://img.shields.io/badge/Python-3.8%20|%203.9|%203.10|%203.11-%236600cc)](https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django)
+[![Django Versions](https://img.shields.io/badge/Django-3.2%20|%204.1%20|%204.2-brown.svg)](https://www.djangoproject.com/download/)
 
 # django-letsmaintain
 Django middleware that provides a maintenance countdown warning message.
