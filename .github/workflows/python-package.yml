@@ -36,9 +36,9 @@ jobs:
         django-version: ["Django>=3.2,<3.3", "Django>=4.1,<4.2", "Django>=4.2"]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
 
