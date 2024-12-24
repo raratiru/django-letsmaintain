@@ -1,5 +1,5 @@
 schedule: "every week"
 requirements:
-  - test_setup/requirements.txt:
+  - pyproject.toml:
       update: all
       pin: True
