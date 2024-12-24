@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-letsmaintain"
+version = "1.0.5"
+description = "Django middleware that provides a maintenance countdown warning message."
+authors = ["George Tantiras"]
+license = "BSD 3-Clause License"
+readme = "README.md"
+packages = [{include = "letsmaintain"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+django = "^5.1.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
