@@ -33,7 +33,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.10", "3.11", "3.12", "3.13"]
-        django-version: ["Django>=5.0,<5.1", "Django>=5.1,<5.2", "Django>=5.2"]
+        django-version: ["Django>=5.0,<5.1", "Django>=5.1,<5.2"]
 
     steps:
     - uses: actions/checkout@v3
