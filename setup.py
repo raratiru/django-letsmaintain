@@ -34,7 +34,7 @@ setup(
     license="BSD 3-Clause License",
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
-    install_requires=["Django>=3.2"],
+    install_requires=["Django>=5.0"],
     zip_safe=False,
     classifiers=[
         "Development Status :: 5 - Production/Stable",
