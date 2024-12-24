@@ -2,7 +2,7 @@
 [![Updates](https://pyup.io/repos/github/raratiru/django-letsmaintain/shield.svg)](https://pyup.io/repos/github/raratiru/django-letsmaintain/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-[![Python Versions](https://img.shields.io/badge/Python-3.9%20|%203.10|%203.11|%203.12|%203.13-%236600cc)](https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django)
+[![Python Versions](https://img.shields.io/badge/Python-3.10|%203.11|%203.12|%203.13-%236600cc)](https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django)
 [![Django Versions](https://img.shields.io/badge/Django-5.0%20|%205.1%20|%205.2-brown.svg)](https://www.djangoproject.com/download/)
 
 # django-letsmaintain

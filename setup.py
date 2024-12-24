@@ -1,17 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-# ==============================================================================
-#
-#       File Name : setup.py
-#
-#       Creation Date : Wed 24 Jun 2020 06:46:12 PM EEST (18:46)
-#
-#       Last Modified : Wed 24 Jun 2020 08:30:44 PM EEST (20:30)
-#
-# ==============================================================================
-
 import os
 from setuptools import find_packages, setup
 
@@ -23,7 +12,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name="django-letsmaintain",
     version="1.0.4",
-    python_requires=">=3.9",
+    python_requires=">=3.10",
     description=(
         "Django middleware that provides a maintenance countdown warning message."
     ),
@@ -42,13 +31,11 @@ setup(
         "Framework :: Django",
         "Framework :: Django :: 5.0",
         "Framework :: Django :: 5.1",
-        "Framework :: Django :: 5.2",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
