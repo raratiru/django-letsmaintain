@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-letsmaintain"
-version = "1.0.7"
+version = "1.0.8"
 description = "Django middleware that provides a maintenance countdown warning message."
 authors = ["George Tantiras"]
 license = "BSD 3-Clause License"
